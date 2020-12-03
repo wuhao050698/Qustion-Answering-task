@@ -1,4 +1,4 @@
-## Deep learning models for Qustion Answering task
+## BERT based models for Qustion Answering task
 we implemented 3 different BERT related models for this Question Answering task and the best models obtained 67.69\% test accuracy on the RACE dataset. In the experiment, we try to tune different parameters which include learning rate, L2 regulation, and batch size, and max sequence length. Moreover, we implement the Data augmentation on the ALBERT to obtain the 0.6 gain in accuracy. 
 
 ### some important reference:
