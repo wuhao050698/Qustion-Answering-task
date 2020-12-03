@@ -8,7 +8,6 @@ import logging
 import os
 from dataclasses import dataclass, field
 from typing import Dict, Optional
-import torch.utils.data
 import numpy as np
 
 from transformers import (
@@ -21,7 +20,7 @@ from transformers import (
     TrainingArguments,
     set_seed,
 ) # Invoke the pre-training model configuration from the transformers
-from utils_multiple_choice import MultipleChoiceDataset, Split, processors
+from code.utils_multiple_choice import MultipleChoiceDataset, Split, processors
 
 logger = logging.getLogger(__name__) # set a logger
 
