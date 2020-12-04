@@ -5,15 +5,16 @@
 we implemented 3 different BERT related models for this Question Answering task and the best models obtained 67.69\% test accuracy on the RACE dataset. In the experiment, we try to tune different parameters which include learning rate, L2 regulation, and batch size, and max sequence length. Moreover, we implement the Data augmentation on the ALBERT to obtain the 0.6 gain in accuracy. 
 
 ## About the code
-- data_augmentation.py: use some simple way to do data augmentation in the RACE dataset.
-- utils_multiple_choice.py: preprocess the data from RACE and others
-- run_multiple_choice.py: load the pre-training model and run the training
-- transformers/ : some setting from transformers
+- **data_augmentation.py**: use some simple way to do data augmentation in the RACE dataset.
+- **utils_multiple_choice.py**: preprocess the data from RACE and others
+- **run_multiple_choice.py**: load the pre-training model and run the training. It combine different models in it, including bert,roberta,albert.
+- **transformers/** : some setting from transformers
 ## some important reference:
 - [transformers: A useful pre-training model framework for nlp](https://github.com/huggingface/transformers)
 - [nltk: some tools for nlp](https://github.com/nltk/nltk)
 
 ## Usage
+The parameter should be set appropriate value to get the best result.
 * train
  ```sh
 CUDA_VISIBLE_DEVICES=0 nohup python run_multiple_choice.py \
